@@ -7,6 +7,12 @@ $('#btnvibrar').on('tap',function(){
 });// tap to vibrate
 $('#btnbeep').on('tap',function(){
 navigator.beep(2);	
+$('#izquierda').on('swipe left', function(){
+	alert("Barrio a la izquierda")
+$('#derecha').on('swipe right', function(){
+	alert("Barrio a la derecha")
+});
+});
 });
 }); 
 });
