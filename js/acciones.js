@@ -6,7 +6,7 @@ $('#btnvibrar').on('tap',function(){
 
 });// tap to vibrate
 $('#btnbeep').on('tap',function(){
-navigator.notification.beep(2)
+navigator.notification.beep(2000)
 $('#izquierda').on('swipe left', function(){
 	alert("Barrio a la izquierda")
 $('#derecha').on('swipe right', function(){
