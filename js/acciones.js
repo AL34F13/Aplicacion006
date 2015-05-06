@@ -6,14 +6,25 @@ $('#btnvibrar').on('tap',function(){
 
 });// tap to vibrate
 $('#btnbeep').on('tap',function(){
-navigator.notification.beep(2000)
-$('#izquierda').on('swipe left', function(){
-	alert("Barrio a la izquierda")
-$('#derecha').on('swipe right', function(){
-	alert("Barrio a la derecha")
-});
-});
-});
-}); 
-});
+navigator.notification.beep(2);f
 
+});
+$('#izquierda').on('swipeleft', function(){
+	alert("Barrio a la izquierda");
+	
+	});
+$('#derecha').on('swiperight', function(){
+	alert("Barrio a la derecha");
+    });
+document.addEventListener("pause",function(){
+	$('#listado').append("<p>La applicación se pauso </p>");
+
+});
+document.addEventListener("resume",function(){
+	$('#listado').append("<p>La applicación se reinició </p>");
+}); 
+$(window).on('orientationchange',function(e){
+	$('#listado').append("<p>Orientación: "+ e.orientation +"</p>");
+});
+});
+});
